@@ -3,26 +3,28 @@
     /* colors */
 
     /* primaries */
-    --clr-red: hsl(0, 100%, 67%);
-    --clr-orange-yellow: hsl(39, 100%, 56%);
-    --clr-green-teal: hsl(166, 100%, 37%);
-    --clr-cobalt-blue: hsl(234, 85%, 45%);
+    --red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
 
     /* gradients */
-    --clr-lt-slate-blue: hsl(252, 100%, 67%);
-    --clr-lt-royal-blue: hsl(241, 81%, 54%);
+    --lt-slate-blue: hsl(252, 100%, 67%);
+    --lt-royal-blue: hsl(241, 81%, 54%);
 
-    --clr-violet-blue: hsla(256, 72%, 46%, 1);
-    --clr-persian-blue: hsla(241, 72%, 46%, 0);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
 
     /* neutrals */
-    --clr-white: hsl(0, 0%, 100%);
-    --clr-pale-blue: hsl(221, 100%, 96%);
-    --clr-lt-lavender: hsl(241, 100%, 89%);
-    --clr-dk-gray-blue: hsl(224, 30%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --lt-lavender: hsl(241, 100%, 89%);
+    --dk-gray-blue: hsl(224, 30%, 27%);
 
     /* components */
 
+    --clr-body-bg: var(--pale-blue);
+    --clr-text: var(--lt-lavender);
 
     /* fonts */
 
@@ -149,6 +151,13 @@ h6 {
 
 /* general styling */
 
-/* body {
-    clr-
-} */
+body {
+    background-color: var(--clr-body-bg);
+    color: var(--clr-text);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-medium);
+
+    display: grid;
+    place-content: center;
+}
