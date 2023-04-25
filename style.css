@@ -23,13 +23,26 @@
 
     /* components */
 
-    --clr-body-bg: var(--pale-blue);
-    --clr-text: var(--lt-lavender);
+    /* card gradients */
+    --clr-bg-results-top: var(--lt-slate-blue);
+    --clr-bg-results-bot: var(--lt-royal-blue);
+
+    --clr-results-score-top: var(--violet-blue);
+    --clr-results-score-bot: var(--persian-blue);
+
+    --clr-results-text: var(--lt-lavender);
+    --clr-summary-text: var(--dk-gray-blue);
+
+    --clr-text-accent: var(--white);
+    --clr-button: var(--persian-blue);
 
     /* fonts */
 
     /* font-size */
     --fs-400: 1.1rem;
+    --fs-500: 1.438rem;
+    --fs-600: 1.875rem;
+    --fs-800: 4.5rem;
 
     /* font-weight */
     --fw-medium: 500;
@@ -152,12 +165,66 @@ h6 {
 /* general styling */
 
 body {
-    background-color: var(--clr-body-bg);
-    color: var(--clr-text);
+    background: teal;
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: var(--fs-400);
     font-weight: var(--fw-medium);
 
     display: grid;
     place-content: center;
+}
+
+.card__container {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 23rem;
+    padding: 2.3rem 4rem 3.5rem;
+    text-align: center;
+}
+
+.card--results {
+    background: linear-gradient(var(--clr-bg-results-top), var(--clr-bg-results-bot));
+    color: var(--clr-results-text);
+}
+
+.card--summary {
+    background-color: white;
+    color: var(--clr-summary-text);
+}
+
+.card__title {
+    font-size: var(--fs-500);
+    margin-bottom: 2.05rem;
+}
+
+.card__score-container {
+    background: linear-gradient(var(--clr-results-score-top), var(--clr-bg-results-bot));
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    margin-bottom: 1.75rem;
+    padding: 3rem;
+    text-align: center;
+    line-height: 1.15;
+}
+
+.card__score--results {
+    color: var(--clr-text-accent);
+    font-size: var(--fs-800);
+    font-weight: var(--fw-ex-bold);
+}
+
+.card__subtitle {
+    color: var(--clr-text-accent);
+    font-size: var(--fs-600);
+    margin-bottom: 0.75rem;
+}
+
+.card__copy {
+    line-height: 1.3;
 }
