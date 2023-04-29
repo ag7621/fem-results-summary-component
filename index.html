@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
-    <script src="app .js"></script>
+    <script src="app.js"></script>
 
 </head>
 
@@ -34,25 +34,40 @@
             <h2 class="section__title">Summary</h2>
             <div class="summary__content">
                 <div class="summary__score-container reaction">
-                    <span class="score__icon"></span>
-                    <h3 class="score__category">Reaction</h3>
-                    <p><span class="score__result"></span> / 100</p>
+                    <img class="score__icon" id="reaction-icon"></img>
+                    <h3 class="score__category" id="reaction-category"></h3>
+                    <p><span class="score__result" id="reaction-score"></span> / 100</p>
                 </div>
                 <div class="summary__score-container memory">
+                    <img class="score__icon" id="memory-icon"></img>
+                    <h3 class="score__category" id="memory-category"></h3>
+                    <p><span class="score__result" id="memory-score"></span> / 100</p>
+                </div>
+                <div class="summary__score-container verbal">
+                    <img class="score__icon" id="verbal-icon"></img>
+                    <h3 class="score__category" id="verbal-category"></h3>
+                    <p><span class="score__result" id="verbal-score"></span> / 100</p>
+                </div>
+                <div class="summary__score-container visual">
+                    <img class="score__icon" id="visual-icon"></img>
+                    <h3 class="score__category" id="visual-category"></h3>
+                    <p><span class="score__result" id="visual-score"></span> / 100</p>
+                </div>
+                <!-- <div class="summary__score-container memory">
                     <span class="score__icon"></span>
-                    <h3 class="score__category">Memory</h3>
+                    <h3 class="score__category"></h3>
                     <p><span class="score__result"></span> / 100</p>
                 </div>
                 <div class="summary__score-container verbal">
                     <span class="score__icon"></span>
-                    <h3 class="score__category">Verbal</h3>
+                    <h3 class="score__category"></h3>
                     <p><span class="score__result"></span> / 100</p>
                 </div>
                 <div class="summary__score-container visual">
                     <span class="score__icon"></span>
-                    <h3 class="score__category">Visual</h3>
+                    <h3 class="score__category"></h3>
                     <p><span class="score__result"></span> / 100</p>
-                </div>
+                </div> -->
             </div>
             <button>Continue</button>
         </section>
