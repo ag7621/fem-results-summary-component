@@ -16,43 +16,47 @@
 </head>
 
 <body>
-    <div class="card__container">
-        <section class="card card--results">
-            <h1 class="card__title--results">Your Result</h1>
-            <div class="card__score-container">
-                <p class="card__score--results ">76</p>
-                <p>of 100</p>
+    <main class="sections-container">
+        <section class="section--results card ">
+            <h1 class="section__title">Your Result</h1>
+            <div class="results__score-container">
+                <p class="results__score ">
+                    <span>76</span>
+                    of 100
+                </p>
+                <!-- <p>of 100</p> -->
             </div>
-            <h2 class="card__subtitle">Great</h2>
-            <p class="card__copy">You scored higher than 65% of the people who have taken these tests.</p>
+            <h2 class="results__subtitle">Great</h2>
+            <p class="results__text">You scored higher than 65% of the people who have taken these tests.</p>
         </section>
-        <section class="card card--summary">
-            <h1 class="card__title--summary">Summary</h1>
+
+        <section class="section--summary card ">
+            <h2 class="section__title">Summary</h2>
             <div class="summary__content">
-                <div class="summary__scorecard reaction">
-                    <span class="card__icon"></span>
-                    <h3 class="card__category">Reaction</h3>
-                    <p><span class="card__score"></span> / 100</p>
+                <div class="summary__score-container reaction">
+                    <span class="score__icon"></span>
+                    <h3 class="score__category">Reaction</h3>
+                    <p><span class="score__result"></span> / 100</p>
                 </div>
-                <div class="summary__scorecard memory">
-                    <span class="card__icon"></span>
-                    <h3 class="card__category">Memory</h3>
-                    <p><span class="card__score"></span> / 100</p>
+                <div class="summary__score-container memory">
+                    <span class="score__icon"></span>
+                    <h3 class="score__category">Memory</h3>
+                    <p><span class="score__result"></span> / 100</p>
                 </div>
-                <div class="summary__scorecard verbal">
-                    <span class="card__icon"></span>
-                    <h3 class="card__category">Verbal</h3>
-                    <p><span class="card__score"></span> / 100</p>
+                <div class="summary__score-container verbal">
+                    <span class="score__icon"></span>
+                    <h3 class="score__category">Verbal</h3>
+                    <p><span class="score__result"></span> / 100</p>
                 </div>
-                <div class="summary__scorecard visual">
-                    <span class="card__icon"></span>
-                    <h3 class="card__category">Visual</h3>
-                    <p><span class="card__score"></span> / 100</p>
+                <div class="summary__score-container visual">
+                    <span class="score__icon"></span>
+                    <h3 class="score__category">Visual</h3>
+                    <p><span class="score__result"></span> / 100</p>
                 </div>
             </div>
             <button>Continue</button>
         </section>
-    </div>
+    </main>
 </body>
 
 </html>
