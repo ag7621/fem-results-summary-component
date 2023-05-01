@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
 
 </head>
 
@@ -33,7 +33,7 @@
         <section class="section--summary card ">
             <h2 class="section__title">Summary</h2>
             <div class="summary__content">
-                <div class="summary__score-container reaction">
+                <!-- <div class="summary__score-container reaction">
                     <img class="score__icon" id="reaction-icon"></img>
                     <h3 class="score__category" id="reaction-category"></h3>
                     <p><span class="score__result" id="reaction-score"></span> / 100</p>
@@ -52,7 +52,7 @@
                     <img class="score__icon" id="visual-icon"></img>
                     <h3 class="score__category" id="visual-category"></h3>
                     <p><span class="score__result" id="visual-score"></span> / 100</p>
-                </div>
+                </div> -->
                 <!-- <div class="summary__score-container memory">
                     <span class="score__icon"></span>
                     <h3 class="score__category"></h3>
@@ -72,6 +72,14 @@
             <button>Continue</button>
         </section>
     </main>
+
+    <template data-template>
+        <div class="summary__score-container">
+            <img class="score__icon" id="visual-icon"></img>
+            <h3 class="score__category" id="visual-category"></h3>
+            <p><span class="score__result" id="visual-score"></span> / 100</p>
+        </div>
+    </template>
 </body>
 
 </html>
