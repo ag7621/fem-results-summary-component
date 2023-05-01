@@ -1,0 +1,132 @@
+body {
+    background: teal;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-medium);
+
+    display: grid;
+    place-content: center;
+}
+
+.sections-container {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 30px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+}
+
+.section--results {
+    background: linear-gradient(var(--clr-bg-results-top), var(--clr-bg-results-bot));
+    color: var(--clr-results-text);
+    border-radius: 30px;
+    align-items: center;
+    padding: 2.3rem 4rem 3.5rem;
+    text-align: center;
+}
+
+.section--summary {
+    background-color: white;
+    color: var(--clr-summary-text);
+    border-radius: 0 30px 30px 0;
+    padding: 2.3rem 2.5rem;
+}
+
+.section__title {
+    font-size: var(--fs-500);
+}
+
+.results__score-container {
+    background: linear-gradient(var(--clr-results-score-top), var(--clr-bg-results-bot));
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    margin: 2.05rem 0 1.75rem;
+    padding: 3rem;
+    line-height: 1.15;
+}
+
+.results__score>span {
+    display: block;
+    color: var(--clr-text-accent);
+    font-size: var(--fs-800);
+    font-weight: var(--fw-ex-bold);
+}
+
+.results__subtitle {
+    color: var(--clr-text-accent);
+    font-size: var(--fs-600);
+    margin-bottom: 0.75rem;
+}
+
+.results__text {
+    line-height: 1.3;
+}
+
+.summary__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.063rem;
+    margin-top: 1.625rem;
+}
+
+.summary__item {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.875rem 1rem;
+}
+
+.summary__item>h3 {
+    margin-left: 0.813rem;
+    font-size: var(--fs-450);
+    font-weight: var(--fw-medium);
+}
+
+.summary__item>p {
+    color: var(--dk-gray-blue-alpha);
+    font-weight: var(--fw-ex-bold);
+    margin-left: auto;
+}
+
+.summary__item span {
+    color: var(--clr-summary-text);
+    margin-right: 0.375rem;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--clr-button);
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+    margin-top: 2.625rem;
+    padding: 0.938rem;
+}
+
+button:active {
+    background: linear-gradient(var(--clr-results-score-top), var(--clr-bg-results-bot));
+}
+
+.reaction {
+    background-color: var(--clr-reaction);
+    color: var(--clr-reaction-text);
+}
+
+.memory {
+    background-color: var(--clr-memory);
+    color: var(--clr-memory-text);
+}
+
+.verbal {
+    background-color: var(--clr-verbal);
+    color: var(--clr-verbal-text);
+}
+
+.visual {
+    background-color: var(--clr-visual);
+    color: var(--clr-visual-text);
+}

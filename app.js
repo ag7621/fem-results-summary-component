@@ -25,8 +25,6 @@ function getElement(id) {
 const template = document.querySelector('[data-template]');
 const container = document.querySelector('.summary__content');
 
-
-
 function fetchData() {
     fetch('data.json')
         .then(res => res.json())
@@ -37,9 +35,12 @@ function fetchData() {
                 // console.log(item)
                 const summary__item = template.content.cloneNode(true).children[0];
                 // const item__container = document.querySelector('.summary__score-container');
-                const icon = summary__item.querySelector('.score__icon');
-                const category = summary__item.querySelector('.score__category');
-                const score = summary__item.querySelector('.score__result');
+                // const icon = summary__item.querySelector('.score__icon');
+                // const category = summary__item.querySelector('.score__category');
+                // const score = summary__item.querySelector('.score__result');
+                const icon = summary__item.querySelector('[data-icon]');
+                const category = summary__item.querySelector('[data-category]');
+                const score = summary__item.querySelector('[data-result]');
                 icon.src = item.icon;
                 category.innerText = item.category;
                 score.innerText = item.score;

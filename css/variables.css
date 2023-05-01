@@ -1,0 +1,70 @@
+:root {
+
+    /* colors */
+
+    /* primaries */
+    --red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* transparencies */
+    --red-alpha: hsla(0, 100%, 67%, 0.1);
+    --orange-yellow-alpha: hsla(39, 100%, 56%, 0.1);
+    --green-teal-alpha: hsla(166, 100%, 37%, 0.1);
+    --cobalt-blue-alpha: hsla(234, 85%, 45%, 0.1);
+
+    /* gradients */
+    --lt-slate-blue: hsl(252, 100%, 67%);
+    --lt-royal-blue: hsl(241, 81%, 54%);
+
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* neutrals */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --lt-lavender: hsl(241, 100%, 89%);
+    --dk-gray-blue: hsl(224, 30%, 27%);
+    --dk-gray-blue-alpha: hsla(224, 30%, 27%, 0.5);
+
+
+    /* card gradients */
+    --clr-bg-results-top: var(--lt-slate-blue);
+    --clr-bg-results-bot: var(--lt-royal-blue);
+
+    --clr-results-score-top: var(--violet-blue);
+    --clr-results-score-bot: var(--persian-blue);
+
+    /* components */
+    --clr-results-text: var(--lt-lavender);
+    --clr-summary-text: var(--dk-gray-blue);
+
+    --clr-text-accent: var(--white);
+    --clr-button: var(--dk-gray-blue);
+
+    --clr-reaction: var(--red-alpha);
+    --clr-memory: var(--orange-yellow-alpha);
+    --clr-verbal: var(--green-teal-alpha);
+    --clr-visual: var(--cobalt-blue-alpha);
+
+    --clr-reaction-text: var(--red);
+    --clr-memory-text: var(--orange-yellow);
+    --clr-verbal-text: var(--green-teal);
+    --clr-visual-text: var(--cobalt-blue);
+
+    /* fonts */
+
+    /* font-size */
+    --fs-400: 1.1rem;
+    --fs-450: 1.125rem;
+    --fs-500: 1.438rem;
+    --fs-600: 1.875rem;
+    --fs-800: 4.5rem;
+
+    /* font-weight */
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-ex-bold: 800;
+
+}

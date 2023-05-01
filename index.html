@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Mentor || Results Summary Component </title>
     <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
@@ -17,67 +19,30 @@
 
 <body>
     <main class="sections-container">
-        <section class="section--results card ">
+        <section class="section--results">
             <h1 class="section__title">Your Result</h1>
             <div class="results__score-container">
                 <p class="results__score ">
                     <span>76</span>
                     of 100
                 </p>
-                <!-- <p>of 100</p> -->
             </div>
             <h2 class="results__subtitle">Great</h2>
             <p class="results__text">You scored higher than 65% of the people who have taken these tests.</p>
         </section>
 
-        <section class="section--summary card ">
+        <section class="section--summary">
             <h2 class="section__title">Summary</h2>
-            <div class="summary__content">
-                <!-- <div class="summary__score-container reaction">
-                    <img class="score__icon" id="reaction-icon"></img>
-                    <h3 class="score__category" id="reaction-category"></h3>
-                    <p><span class="score__result" id="reaction-score"></span> / 100</p>
-                </div>
-                <div class="summary__score-container memory">
-                    <img class="score__icon" id="memory-icon"></img>
-                    <h3 class="score__category" id="memory-category"></h3>
-                    <p><span class="score__result" id="memory-score"></span> / 100</p>
-                </div>
-                <div class="summary__score-container verbal">
-                    <img class="score__icon" id="verbal-icon"></img>
-                    <h3 class="score__category" id="verbal-category"></h3>
-                    <p><span class="score__result" id="verbal-score"></span> / 100</p>
-                </div>
-                <div class="summary__score-container visual">
-                    <img class="score__icon" id="visual-icon"></img>
-                    <h3 class="score__category" id="visual-category"></h3>
-                    <p><span class="score__result" id="visual-score"></span> / 100</p>
-                </div> -->
-                <!-- <div class="summary__score-container memory">
-                    <span class="score__icon"></span>
-                    <h3 class="score__category"></h3>
-                    <p><span class="score__result"></span> / 100</p>
-                </div>
-                <div class="summary__score-container verbal">
-                    <span class="score__icon"></span>
-                    <h3 class="score__category"></h3>
-                    <p><span class="score__result"></span> / 100</p>
-                </div>
-                <div class="summary__score-container visual">
-                    <span class="score__icon"></span>
-                    <h3 class="score__category"></h3>
-                    <p><span class="score__result"></span> / 100</p>
-                </div> -->
-            </div>
+            <div class="summary__content"></div>
             <button>Continue</button>
         </section>
     </main>
 
     <template data-template>
-        <div class="summary__score-container">
-            <img class="score__icon" id="visual-icon"></img>
-            <h3 class="score__category" id="visual-category"></h3>
-            <p><span class="score__result" id="visual-score"></span> / 100</p>
+        <div class="summary__item">
+            <img data-icon></img>
+            <h3 data-category></h3>
+            <p><span data-result></span> / 100</p>
         </div>
     </template>
 </body>
