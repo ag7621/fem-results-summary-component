@@ -1,5 +1,4 @@
 body {
-    background: teal;
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: var(--fs-400);
     font-weight: var(--fw-medium);
@@ -12,6 +11,7 @@ body {
     display: flex;
     background-color: var(--white);
     border-radius: 30px;
+    box-shadow: 0 10px 20px 10px var(--clr-box-shadow);
 }
 
 section {
@@ -41,7 +41,7 @@ section {
 }
 
 .results__score-container {
-    background: linear-gradient(var(--clr-results-score-top), var(--clr-bg-results-bot));
+    background: linear-gradient(var(--clr-results-score-top), var(--clr-results-score-bot));
     border-radius: 100%;
     aspect-ratio: 1/1;
     margin: 2.05rem 0 1.75rem;
@@ -107,7 +107,16 @@ button {
     padding: 0.938rem;
 }
 
-button:active {
+.attribution {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    /* margin-bottom: 0.5rem; */
+    text-align: center;
+}
+
+button:hover {
     background: linear-gradient(var(--clr-results-score-top), var(--clr-bg-results-bot));
 }
 
@@ -148,7 +157,7 @@ button:active {
 
     .section--results {
         border-radius: 0 0 30px 30px;
-        padding: 1.25rem 2rem 2.5rem;
+        padding: 1.25rem 3rem 2.5rem;
     }
 
     .section__title {
@@ -197,6 +206,10 @@ button:active {
 
     button {
         margin-top: 1.5rem;
+    }
+
+    .attribution {
+        display: none;
     }
 
 }
