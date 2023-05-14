@@ -105,6 +105,7 @@ button {
     border-radius: 50px;
     margin-top: 2.625rem;
     padding: 0.938rem;
+    transition: all 100ms ease-in;
 }
 
 .attribution {
@@ -112,12 +113,15 @@ button {
     width: 100%;
     bottom: 0;
     left: 0;
-    /* margin-bottom: 0.5rem; */
     text-align: center;
 }
 
 button:hover {
     background: linear-gradient(var(--clr-results-score-top), var(--clr-bg-results-bot));
+}
+
+button:active {
+    transform: scale(0.95);
 }
 
 .reaction {

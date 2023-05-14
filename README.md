@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop preview image for Profile card component challenge](/assets/images/desktop-view.png "Desktop preview")
-![Mobile preview image for Profile card component challenge](/assets/images/mobile-view.png "Mobile preview")
+![Desktop preview image for Results component challenge](/assets/images/desktop-view.png "Desktop preview")
+![Mobile preview image for Results component challenge](/assets/images/mobile-view.png "Mobile preview")
 
 ### Links
 
